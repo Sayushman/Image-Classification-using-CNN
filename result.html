@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>Classification Result</h1>
+    <h2>Uploaded Image: {{ filename }}</h2>
+    <ul>
+        {% for prediction in predictions %}
+            <li>{{ prediction[1] }}: {{ prediction[2] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
